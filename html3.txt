@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>ecom</title>
+</head>
+<body>
+<div class="card">
+  <div class="top-section">
+       <img id="image-container" src="h1.jpeg">
+  </div>
+  <div class="nav">
+      <img onclick="change_img(this)" src="h1.jpeg">
+      <img onclick="change_img(this)" src="h2.jpeg">
+      <img onclick="change_img(this)" src="h3.jpeg">
+  </div>
+  <div class="product-info">
+    <div class="price-box">
+        <p class="price">&#8377;1,900</p>
+    </div>
+    <div class="name">OnePlus</div>
+    <div class="dis">Awesome</div>
+    <a class="btn" href="#">ADD TO CART</a>
+  </div>
+</div>
+<script>
+ function change_img(element){
+   var fulling = document.getElementById("image-container");
+   fulling.src = element.src;
+ }
+</script>
+</body>
+</html>
